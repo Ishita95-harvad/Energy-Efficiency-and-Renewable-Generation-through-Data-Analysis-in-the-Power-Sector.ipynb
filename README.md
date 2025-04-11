@@ -1,67 +1,45 @@
 # Energy-Efficiency-and-Renewable-Generation-through-Data-Analysis-in-the-Power-Sector.ipynb
 
-energy-efficiency-renewables-ai/
-│
-├── data/
-
-│   ├── raw/                     # Raw sensor, grid, weather data
-
-│   ├── processed/               # Cleaned and merged data
-
-│
-├── agents/
-
-│   ├── load_forecast_agent.py
-
-│   ├── generation_optimizer.py
-
-│   ├── efficiency_auditor.py
-
-│   ├── renewable_predictor.py
-
-│   └── visualization_agent.py
-
-│
-├── models/
-│   ├── forecasting_model.pkl
-│   ├── optimization_model.py
-│   └── anomaly_detector.py
-│
-├── dashboards/
-
-│   ├── streamlit_app.py
-
-│   └── dashboard_components/
-
-│
-├── notebooks/
-│   ├── EDA.ipynb
-
-
-│   ├── Forecasting_Models.ipynb
-
-│   └── Optimization_Simulation.ipynb
-
-│
-├── api/
-│   └── agent_api.py             # Flask/FastAPI to serve agent outputs
-
-│
-├── utils/
-│   ├── data_loader.py
-
-│   └── kpi_calculator.py
-│
-├── tests/
-
-│   └── unit_tests.py
-│
-├── .env                         # API keys, DB connection
-
-├── requirements.txt
-
-├── Dockerfile
-
-├── README.md
-
-└── LICENSE
+#energy-efficiency-multiagent/
+#│
+#├── agents/
+#│   ├── load_forecast_agent.py
+#│   ├── renewable_predictor_agent.py
+#│   ├── efficiency_auditor_agent.py
+#│   ├── optimizer_agent.py
+#│   ├── compliance_agent.py
+#│   └── dashboard_agent.py
+#│
+#├── communication/
+#│   └── coordinator.py  # Manages message passing (Pub/Sub or API)
+#│
+#├── models/
+#│   ├── load_model.pkl
+#│   └── renewable_model.pkl
+#│
+#├── data/
+#│   ├── raw/
+#│   └── processed/
+#│
+#├── dashboard/
+#│   └── streamlit_dashboard.py
+#│
+#├── api/
+#│   └── main.py  # FastAPI app to connect agents
+#│
+#├── utils/
+#│   ├── logger.py
+#│   └── config.py
+#│
+#├── notebooks/
+#│   ├── EDA.ipynb
+#│   └── Forecasting_Validation.ipynb
+#│
+#├── tests/
+#│   └── test_agents.py
+#│
+#├── Dockerfile
+#├── requirements.txt
+#├── .env
+#├── README.md
+#└── LICENSE
